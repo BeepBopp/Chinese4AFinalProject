@@ -27,6 +27,7 @@ if st.button("Translate"):
             else:
                 st.success(f"Did you mean: **{match}**?\n\n**Chinese meaning:** {chinese_meaning}")
         else:
+            st.error("Word not found!")
     else:
         st.warning("Please enter an English word to translate.")
 
