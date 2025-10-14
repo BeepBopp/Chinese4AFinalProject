@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from rapidfuzz import process
 
 @st.cache_data
 def load_vocab(file_path):
@@ -9,12 +10,24 @@ vocab_df = load_vocab("vocab.csv")
 
 st.title("Translate to English 🦅")
 
-chinese_word = st.text_input("Enter a Chinese word:")
+st.write("Enter a Chinese word to get the English translation! This app only recognizes (most of) the vocab we learned so far.")
 
-if chinese_word:
-    result = vocab_df[vocab_df['Chinese'] == chinese_word]
-    if not result.empty:
-        english_meaning = result.iloc[0]['English']
-        st.success(f"English meaning: **{english_meaning}**")
+chinese_word = st.text_input("Enter a word:")
+
+if st.button("Translate"):
+    if chinese_word:
+        chinese_vocab_list = vocab_df['Chinese'].tolist()
+
+        match, score, index = process.extractOne(chinese_word, chinese_vocab_list)
+
+        if score >= 80:  
+            english_meaning = vocab_df.iloc[index]['English']
+            if match == chinese_word:
+                st.success(f"**English meaning:** {english_meaning}")
+            else:
+                st.success(f"Did you mean: **{match}**?\n\n**English meaning:** {english_meaning}")
+        else:
+            st.error("Word not found!")
     else:
-        st.error("Word not found!")
+        st.warning("Please enter a word if you like to translate!")
+
