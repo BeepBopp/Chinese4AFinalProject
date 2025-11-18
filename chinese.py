@@ -4,7 +4,6 @@ from rapidfuzz import process
 from pypinyin import pinyin, Style
 from openai import OpenAI
 
-# Load vocab
 @st.cache_data
 def load_vocab(file_path):
     return pd.read_csv(file_path)
