@@ -43,4 +43,4 @@ if st.button("Translate"):
         else:
             st.error("Word not found!")
     else:
-        st.warning("Please enter a word if you like to translate!")
+        st.warning("Please enter a Chinese word to translate!!")
