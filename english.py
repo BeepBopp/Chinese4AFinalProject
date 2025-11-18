@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from rapidfuzz import process
-import openai
+import openai as OpenAI
 
 @st.cache_data
 def load_vocab(file_path):
