@@ -42,7 +42,7 @@ if st.button("Translate"):
                 image_response = client.images.generate(
                     model="gpt-image-1",
                     prompt=prompt,
-                    size="512x512"
+                    size="1024x1024"
                 )
                 try:
                     b64 = image_response.data[0].b64_json
