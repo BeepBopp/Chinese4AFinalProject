@@ -33,9 +33,9 @@ if st.button("Translate"):
             with st.spinner("Generating image..."):
                 prompt = f"A realistic, high-quality image of {english_word} ({chinese_meaning})"
                 image_response = client.images.generate(
-                    model="gpt-image-1",
+                    model="dall-e-3",
                     prompt=prompt,
-                    size="512x512"
+                    size="1024x1024"
                 )
                 image_url = image_response.data[0].url
                 st.image(image_url, caption=f"Image of {english_word}; generated with an OpenAI API key")
