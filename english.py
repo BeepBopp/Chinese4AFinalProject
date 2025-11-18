@@ -40,7 +40,7 @@ if st.button("Translate"):
             with st.spinner("Generating image..."):
                 prompt = f"A realistic, high-quality image representing '{english_meaning}'"
                 image_response = client.images.generate(
-                    model="gpt-image-1",
+                    model="dall-e-3",
                     prompt=prompt,
                     size="1024x1024"
                 )
