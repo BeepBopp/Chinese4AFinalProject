@@ -6,7 +6,7 @@ st.header("Witness a dialogue between American and Chinese kids!")
 with st.expander("English Version"):
   st.markdown("""
   A: Hi! I am American!
-  B: Hi! I am Chinese! What do you like to do in your free time? \
+  B: Hi! I am Chinese! What do you like to do in your free time? \\
   A: I like playing soccer and Monopoly with my friends! What do you do in your free time? \
   B: I like playing with my shuttlecock, but unfortunately, I have to study a lot. \
   A: Oh. I have school too, but I don't study that much. \
