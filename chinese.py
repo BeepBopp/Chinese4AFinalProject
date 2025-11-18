@@ -6,7 +6,9 @@ from openai import OpenAI
 
 @st.cache_data
 def load_vocab(file_path):
-    return pd.read_csv(file_path)
+    df = pd.read_csv(file_path)
+    df["English_norm"] = df["English"].astype(str).str.strip().str.lower()
+    return df
 
 vocab_df = load_vocab("vocab.csv")
 
@@ -20,8 +22,9 @@ english_word = st.text_input("Enter a word:")
 
 if st.button("Translate"):
     if english_word:
-        english_vocab_list = vocab_df['English'].tolist()
-        match, score, index = process.extractOne(english_word, english_vocab_list)
+        w = english_word.strip().lower()
+        english_vocab_list = vocab_df['English_norm'].tolist()
+        match, score, index = process.extractOne(w, english_vocab_list)
 
         if score >= 80:
             chinese_meaning = vocab_df.iloc[index]['Chinese']
