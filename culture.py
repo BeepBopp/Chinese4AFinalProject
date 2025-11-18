@@ -50,19 +50,19 @@ with st.expander("Chinese Pinyin Version"):
   st.markdown("""
   A: nǐ hǎo! wǒ shì měiguó rén.  \\
   B: nǐ hǎo! Wǒ shì zhōngguó rén. nǐ yǒu shíjiān de shíhou xǐhuān zuò shénme?  \\
-  A: wǒ xǐhuān gēn péngyǒu tīqiú, hái xǐhuān wán dàfùwēng. nǐ yǒu shíjiān de shíhou xǐhuān zuò shénme? \
+  A: wǒ xǐhuān gēn péngyǒu tīqiú, hái xǐhuān wán dàfùwēng. nǐ yǒu shíjiān de shíhou xǐhuān zuò shénme?  \\
   B: wǒ xǐhuān wán jiànzi, kěshì wǒ hěn duō shíhou yào xuéxí. \\
   A: Ó. Wǒ yě yào shàngxué, kěshì wǒ xiànzài bù zěnme xuéxí.  \\
-  B: nǐ xǐhuān chī shénme? wǒ xǐhuān Zhōngcān, kěshì wǒ yě xǐhuān chī shǔtiáo. \
-  A: wǒ yě xǐhuān chī shǔtiáo! wǒ yě xǐhuān chī shǔpiàn! Wǒ hěn xǐhuān chī língshí! nǐ xǐhuān shénme tiándiǎn? \
-  B: wǒ hěn xǐhuān yuèbǐng. \
-  A: wǒ yě hěn xǐhuān yuèbǐng! yuèbǐng hěn tián, yě hěn hǎochī. \
-  B: nǐ juéde zìjǐ shì gè tiāoshí de rén ma? \
-  A: yǒu shíhou. wǒ bù xǐhuān chī hěn duō cài. \
-  B: wǒ yě bù xǐhuān chī cài, kěshì yǒu yīxiē cài wǒ xǐhuān chī. \
-  A: nǐ xǐhuān qù gòuwù ma? \
-  B: wǒ bù xǐhuān qù gòuwù. wǒ zhǐ gēn wǒ māma qù gòuwù. \
-  A: wǒ jiějie yě hěn xǐhuān gòuwù, suǒyǐ wǒ jīngcháng gēn tā qù gòuwù. \
-  B: Ó. kěshì, wǒ hěn xǐhuān dǎzhé de dōngxi. \
+  B: nǐ xǐhuān chī shénme? wǒ xǐhuān Zhōngcān, kěshì wǒ yě xǐhuān chī shǔtiáo.  \\
+  A: wǒ yě xǐhuān chī shǔtiáo! wǒ yě xǐhuān chī shǔpiàn! Wǒ hěn xǐhuān chī língshí! nǐ xǐhuān shénme tiándiǎn?  \\
+  B: wǒ hěn xǐhuān yuèbǐng. \\
+  A: wǒ yě hěn xǐhuān yuèbǐng! yuèbǐng hěn tián, yě hěn hǎochī.  \\
+  B: nǐ juéde zìjǐ shì gè tiāoshí de rén ma?  \\
+  A: yǒu shíhou. wǒ bù xǐhuān chī hěn duō cài.  \\
+  B: wǒ yě bù xǐhuān chī cài, kěshì yǒu yīxiē cài wǒ xǐhuān chī. \\
+  A: nǐ xǐhuān qù gòuwù ma?  \\
+  B: wǒ bù xǐhuān qù gòuwù. wǒ zhǐ gēn wǒ māma qù gòuwù.  \\
+  A: wǒ jiějie yě hěn xǐhuān gòuwù, suǒyǐ wǒ jīngcháng gēn tā qù gòuwù.  \\
+  B: Ó. kěshì, wǒ hěn xǐhuān dǎzhé de dōngxi.  \\
   A: wǒ yě hěn xǐhuān dǎzhé de dōngxi! piányi de dōngxi dōu hěn hǎo.
   """)
