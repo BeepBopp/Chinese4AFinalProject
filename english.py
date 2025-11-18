@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
 from rapidfuzz import process
-from openai import OpenAI
+import openai
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_data
 def load_vocab(file_path):
     return pd.read_csv(file_path)
 
 vocab_df = load_vocab("vocab.csv")
-
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("Translate to English 🦅")
 
@@ -30,16 +30,18 @@ if st.button("Translate"):
             else:
                 st.success(f"Did you mean: **{match}**?\n\n**English meaning:** {english_meaning}")
 
+            # Generate image using OpenAI API
             with st.spinner("Generating image..."):
-                prompt = f"A realistic, high-quality image of {english_word} ({chinese_meaning})"
-                image_response = client.images.generate(
+                prompt = f"Create a simple, clear illustration representing the word '{english_meaning}'"
+                response = openai.images.generate(
                     model="gpt-image-1",
                     prompt=prompt,
                     size="512x512"
                 )
-                image_url = image_response.data[0].url
-                st.image(image_url, caption=f"Image of {english_word}; generated with an OpenAI API key")
+                image_url = response.data[0].url
+                st.image(image_url, caption=f"Illustration of '{english_meaning}'")
+
         else:
             st.error("Word not found!")
     else:
-        st.warning("Please enter a Chinese word to translate!!")
+        st.warning("Please enter a word to translate!")
