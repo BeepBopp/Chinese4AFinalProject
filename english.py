@@ -31,15 +31,14 @@ if st.button("Translate"):
                 st.success(f"Did you mean: **{match}**?\n\n**English meaning:** {english_meaning}")
 
             with st.spinner("Generating image..."):
-                prompt = f"Create a simple, clear illustration representing the word '{english_meaning}'"
-                response = openai.images.generate(
+                prompt = f"A realistic, high-quality image of {english_word} ({chinese_meaning})"
+                image_response = client.images.generate(
                     model="gpt-image-1",
                     prompt=prompt,
                     size="512x512"
                 )
-                image_url = response.data[0].url
-                st.image(image_url, caption=f"Illustration of '{english_meaning}'")
-
+                image_url = image_response.data[0].url
+                st.image(image_url, caption=f"Image of {english_word}; generated with an OpenAI API key")
         else:
             st.error("Word not found!")
     else:
