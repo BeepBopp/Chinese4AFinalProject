@@ -7,20 +7,20 @@ with st.expander("English Version"):
   st.markdown("""
   A: Hi! I am American!
   B: Hi! I am Chinese! What do you like to do in your free time? \\
-  A: I like playing soccer and Monopoly with my friends! What do you do in your free time? \
-  B: I like playing with my shuttlecock, but unfortunately, I have to study a lot. \
-  A: Oh. I have school too, but I don't study that much. \
-  B: What do you like to eat? I like to eat Chinese food, but I also like eating French fries. \
-  A: I also like eating French fries! I also like potato chips! I love eating snacks! What is your favorite dessert？ \
-  B: My favorite desert are mooncakes! \
-  A: I also like mooncakes! They are very sweet and yummy. \
-  B: Do you think you are a picky eater? \
-  A: Sometimes. I don't like eating a lot of vegetables. \
-  B: I also don't like vegetables, but there a few vegetables I like. \
-  A: Do you like to go shopping? \
-  B: I don't like going shopping. I only go shopping with my mom. \
-  A: My older sister likes going shopping, so I also only go with her. \
-  B: I like to spot discounts though! \
+  A: I like playing soccer and Monopoly with my friends! What do you do in your free time?  \\
+  B: I like playing with my shuttlecock, but unfortunately, I have to study a lot.  \\
+  A: Oh. I have school too, but I don't study that much. \\
+  B: What do you like to eat? I like to eat Chinese food, but I also like eating French fries.  \\
+  A: I also like eating French fries! I also like potato chips! I love eating snacks! What is your favorite dessert？  \\
+  B: My favorite desert are mooncakes!  \\
+  A: I also like mooncakes! They are very sweet and yummy.  \\
+  B: Do you think you are a picky eater?  \\
+  A: Sometimes. I don't like eating a lot of vegetables.  \\
+  B: I also don't like vegetables, but there a few vegetables I like.  \\
+  A: Do you like to go shopping?  \\
+  B: I don't like going shopping. I only go shopping with my mom.  \\
+  A: My older sister likes going shopping, so I also only go with her. \\
+  B: I like to spot discounts though!  \\
   A: Me too! I love it when things are cheap!
   
   """)
