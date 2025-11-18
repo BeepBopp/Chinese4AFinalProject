@@ -23,7 +23,9 @@ if st.button("Translate"):
         if score >= 80:  
             chinese_meaning = vocab_df.iloc[index]['Chinese']
             if match == english_word:
-                st.success(f"**Chinese meaning:** {chinese_meaning}")
+                pinyin = vocab_df.iloc[index]['Pinyin']
+                st.success(f"**Chinese meaning:** {chinese_meaning}", \n, f"**Pinyin:** {pinyin})
+                
             else:
                 st.success(f"Did you mean: **{match}**?\n\n**Chinese meaning:** {chinese_meaning}")
         else:
