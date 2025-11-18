@@ -15,7 +15,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("Translate to Chinese 🏮")
 
-st.write("Enter an English word to get the Chinese translation!")
+st.write("Enter an English word to get the Chinese translation! This app only recognizes (most of) the vocab we learned so far.")
 
 english_word = st.text_input("Enter a word:")
 
