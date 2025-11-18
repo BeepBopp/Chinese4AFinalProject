@@ -3,13 +3,13 @@ import pandas as pd
 from rapidfuzz import process
 import openai
 
-openai.api_key = "YOUR_OPENAI_API_KEY"
-
 @st.cache_data
 def load_vocab(file_path):
     return pd.read_csv(file_path)
 
 vocab_df = load_vocab("vocab.csv")
+
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("Translate to English 🦅")
 
